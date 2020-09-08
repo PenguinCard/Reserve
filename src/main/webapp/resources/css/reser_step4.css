@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: sans-serif;
+}
+.wrap{
+    width: 960px;
+    height: 700px;
+    background-image: url('../img/reserved/bg_warp.gif');
+}
+
+.clear{
+    clear: both;
+}
+
+h2{
+    width: 100%;
+    height: 25px;
+    background-image: url('../img/reserved/bg_tit.gif');
+    border-bottom: 1px solid #888;
+    position: relative;
+}
+.leftbody{
+    width: 720px;
+    height: 100%;
+    float: left;
+}
+.rLogo{
+    width: 110px;
+    height: 60px;
+    float: left;
+}
+
+#rLogoimg{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/reserved/h1_tit.gif');
+}
+.steps{
+    width: 600px;
+    height: 50px;
+    float: right;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+.steps > div{
+    width: 120px;
+    height: 50px;
+    overflow: hidden;
+    background-position: 0 8px;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+#stepimg1{
+    background-image: url('../img/reserved/img_gnb.gif');
+    background-position: 0px 0px;
+}
+#stepimg2{
+    background-image: url('../img/reserved/img_gnb.gif');
+    background-position: -120px 0px;
+}
+#stepimg3{
+    background-image: url('../img/reserved/img_gnb.gif');
+    background-position: -240px 0px;
+}
+#stepimg4{
+    background-image: url('../img/reserved/img_gnb.gif');
+    background-position: -360px -52px;
+}
+#stepimg5{
+    background-image: url('../img/reserved/img_gnb.gif');
+    background-position: -480px 0px;
+}
+table {
+    margin: 10px;
+    border-spacing: 6px;
+}
+td {
+    margin-bottom: 10px;
+}
+.row1 {
+    height: 30px;
+}
+.row2 {
+    font-weight: bold;
+    line-height: 26px;
+    border-bottom: 1px solid #ddd;
+}
+.col1 {
+    padding: 0 10px;
+    width: 85px;
+    font-size: 12px;
+}
+.col2 {
+    position: relative;
+    top: 2px;
+    width: 85%;
+}
+.chk {
+    font-size: 12px;
+    background: #fdeeea;
+}
+#radio {
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+}
+#name {
+    width: 116px;
+}
+#phone1 {
+    width: 36px;
+}
+#phone2 {
+    width: 56px;
+}
+#phone3 {
+    width: 56px;
+}
+#email1 {
+    width: 116px;
+}
+#email2 {
+    width: 116px;
+}
+#remain{
+    width: 100%;
+    height: 650px;
+    background-color: #fff;
+    float: left;
+}
+#selects{
+    width: 700px;
+    height: 230px;
+    box-sizing: border-box;
+    margin: 10px auto;
+}
+
+h2 > img:first-child{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+h2 > img:last-child{
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
+
+#rightbtn{
+    left: 50%;
+    transform: translateX(-70px);
+}
+
+#rightbtn > a{
+    background-image: url('../img/reserved/btn_pre.gif');
+}
+
+#leftbtn{
+    right: -50%;
+    transform: translateX(20px);
+}
+#leftbtn > a{
+    background-image: url('../img/reserved/btn_next.gif');
+}
+
+.choosbox{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.bold{
+    font-size: 12px;
+    font-weight: bold;
+}
+.red {
+    color: red;
+}
+
+/* �쑀�쓽�궗�빆 */
+
+
+.notice{
+    width: 660px;
+    height: 160px;
+    border: 1px solid #888;
+    box-sizing: border-box;
+    margin: 10px auto;
+}
+
+.notbox{
+    width: 25px;
+    height: 100%;
+    background-image: url('../img/reserved/h3_tit_notice.gif');
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.nottext{
+    width: calc(100% - 30px);
+    float: left;
+}
+.notcont{
+    font-size: 12px;
+}
+
+.notcont > li{
+    margin: 4px;
+    width: 100%;
+    color: #888;
+}
+
+
+/* �룷�뒪�꽣 �솕硫� */
+
+.rightbody{
+    width: 220px;
+    height: 100%;
+    float: left;
+    padding: 10px;
+}
+
+.rightTop{
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+
+#dataimg{
+    float: left;
+    width: 90px;
+    height: 100%;
+}
+
+#dataimg > img{
+    width: 100%;
+    height: 110px;
+}
+
+#datainfo{
+    width: 120px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.posttitle{
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.postetc{
+    margin-top: 5px;
+    color: #888;
+    font-size: 10px;
+    letter-spacing: -1px;
+}
+
+.bar{
+    width: 100%;
+    height: 2px;
+    background-image: url('../img/reserved/bg_result01.gif');
+    position: absolute;
+    bottom: 0px;
+}
+
+.rightsec{
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.selinfoTitle{
+    width: 100%;
+    height: 20px;
+    background-image: url('../img/reserved/h3_tit_result01.gif');
+    background-repeat: no-repeat;
+}
+
+.selinfo > ul{
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+}
+
+.selinfo > ul > li{
+    width: 100%;
+    height: 15px;
+    margin-top: 5px;
+}
+
+.selinfo > ul > li > div{
+    width: 20px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+    margin-top: 4px;
+}
+
+.tickinfo{
+    color: #fff;
+    font-size: 12px;
+    margin-left: 10px;
+    float: left;
+}
+#ticketdate{
+    background-image: url('../img/reserved/r_tit01.gif');
+}
+#tickettime{
+    background-image: url('../img/reserved/r_tit02.gif');
+}
+#ticketcnt{
+    background-image: url('../img/reserved/r_tit03.gif');
+}
+#ticketseat{
+    background-image: url('../img/reserved/r_tit04.gif');
+}
+
+
+/* 寃곗젣湲덉븸 */
+
+.rightthir{
+    width: 100%;
+    height: 130px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.payinfo{
+    width: 100%;
+    height: 100%;
+}
+
+#paytitle{
+    width: 100%;
+    height: 20px;
+    background-image: url('../img/reserved/h3_tit_result02.gif');
+    background-repeat: no-repeat;
+}
+.payinfo > ul{
+    width: 100%;
+    height: 150px;
+}
+
+.payinfo > ul > li{
+    width: 100%;
+    height: 15px;
+    margin-top: 5px;
+}
+
+.payinfo > ul > li > div{
+    width: 50px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+#payment{
+    background-image: url('../img/reserved/r_tit05.gif');
+}
+
+#payvat{
+    background-image: url('../img/reserved/r_tit06.gif');
+}
+#paydelivery{
+    background-image: url('../img/reserved/r_tit07.gif');
+}
+#totalpay{
+    background-image: url('../img/reserved/r_tit08.gif');
+}
+
+.payinfo .tickinfo{
+    float: right;
+    margin-right: 10px;
+}
+
+
+.rightfour{
+    width: 100%;
+    height: 170px;
+    position: relative;
+}
+
+.rightfour > ul{
+    width: 100%;
+    height: 140px;
+}
+
+.rightfour > ul > li{
+    width: 100%;
+    height: 15px;
+    margin-top: 5px;
+}
+
+.rightfour > ul > li > div{
+    width: 50px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+#salepay{
+    background-image: url('../img/reserved/r_tit09.gif');
+}
+#coupon{
+    background-image: url('../img/reserved/r_tit10.gif');
+}
+#yesmon{
+    background-image: url('../img/reserved/r_tit11.gif');
+}
+#defaltpay{
+    background-image: url('../img/reserved/r_tit12.gif');
+}
+#yesticket{
+    background-image: url('../img/reserved/r_tit14.gif');
+}
+#playticket{
+    background-image: url('../img/reserved/r_tit16.gif');
+}
+#etcpay{
+    background-image: url('../img/reserved/r_tit17.gif');
+}
+
+#totalsale{
+    background-image: url('../img/reserved/r_tit15.gif');
+}
+
+.rightfour > ul > li > p{
+    float: right;
+    margin-right: 10px;
+}
+
+
+/* 寃곗젣踰꾪듉 */
+
+
+.rightend{
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+}
+.rightend > ul {
+    width: 100%;
+}
+
+.rightend > ul > li{
+    width: 100%;
+    height: 30px;
+    color: #fff;
+}
+.finalpay{
+    width: 100%;
+    height: 30px;
+    background-image: url('../img/reserved/bg_total2.gif');
+    background-size: 100% 100%;
+    position: relative;
+}
+.finalpay > p{
+    float: left;
+    position: absolute;
+}
+
+.finalpay > .paycnt{
+    top: 3px;
+    right: 30px;
+}
+
+.finalpay > p:last-child{
+    top: 5px;
+    right: 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+#prevstepbtn{
+    float: left;
+    display: inline-block;
+    width: 105px;
+    height: 35px;
+    background-image: url('../img/reserved/btn_prev.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#nextstepbtn{
+    display: inline-block;
+    width: 105px;
+    height: 35px;
+    background-image: url('../img/reserved/btn_next02.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}

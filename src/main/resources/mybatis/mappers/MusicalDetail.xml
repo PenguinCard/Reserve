@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappers.MusicalDetail">
+
+<select id="selectall" resultType="MusicalDetailDTO" parameterType="MusicalDetailDTO">
+select * from y_musical_detail
+where musical_detail_id=#{musical_detail_id}
+</select>
+
+<select id="selectmainimg" resultType="MusicalDetailDTO" parameterType="MusicalDetailDTO">
+select musical_detail_image_name, musical_detail_title from y_musical_detail_imagelist
+where musical_detail_image_section='main'
+and musical_detail_image_id=#{musical_detail_image_id}
+</select>
+
+<select id="selectnoticeimg" resultType="MusicalDetailDTO" parameterType="MusicalDetailDTO">
+select musical_detail_image_name, musical_detail_title from y_musical_detail_imagelist
+where musical_detail_image_section='notice'
+and musical_detail_image_id=#{musical_detail_image_id}
+</select>
+
+<select id="selectdiscountimg" resultType="MusicalDetailDTO" parameterType="MusicalDetailDTO">
+select musical_detail_image_name, musical_detail_title from y_musical_detail_imagelist
+where musical_detail_image_section='discount'
+and musical_detail_image_id=#{musical_detail_image_id}
+</select>
+
+<select id="selectinfoimg" resultType="MusicalDetailDTO" parameterType="MusicalDetailDTO">
+select musical_detail_image_name, musical_detail_title from y_musical_detail_imagelist
+where musical_detail_image_section='info'
+and musical_detail_image_id=#{musical_detail_image_id}
+</select>
+
+<select id="selectcastimg" resultType="MusicalDetailDTO" parameterType="MusicalDetailDTO">
+select musical_detail_image_name, musical_detail_title from y_musical_detail_imagelist
+where musical_detail_image_section='cast'
+and musical_detail_image_id=#{musical_detail_image_id}
+</select>   
+
+<select id="selectgenre" resultType="MusicalDetailDTO" parameterType="MusicalDetailDTO"> 
+ select genre 
+ from y_musical_detail
+ where musical_detail_id=#{musical_detail_id}
+ </select>
+ 
+</mapper>

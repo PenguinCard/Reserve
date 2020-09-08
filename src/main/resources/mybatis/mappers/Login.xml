@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.mappers.Login">
+
+<select id="selectid" resultType="memberDTO" parameterType="memberDTO">
+select *
+from y_members
+where member_id=#{member_id}
+</select>
+
+<select id="selectid_pw" resultType="memberDTO" parameterType="String">
+select *
+from y_members
+where mem_id=#{mem_id} 
+and mem_pw=#{mem_pw}
+</select>
+</mapper>

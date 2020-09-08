@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappers.Reservation">
+<select id="countSeat" parameterType="String" resultType="int">
+		select count(*) from y_reservation_seat where booked='NO' and grade=#{value}
+	</select>
+	
+	<select id="searchSeatInfo" parameterType="ReservationDTO" resultType="ReservationDTO">
+		select grade, rowno from y_reservation_seat where seatid=#{seatid}
+	</select>
+	
+	<select id="seatPrice" parameterType="String" resultType="String">
+		select price from y_reservation_price where grade=#{value}
+	</select>
+	
+	<select id="chkBooked" resultType="ReservationDTO">
+		select * from y_reservation_seat
+	</select>
+	
+	<update id="updateBooked" parameterType="ReservationDTO">
+		update y_reservation_seat set booked='YES' where rowno=#{rowno}
+	</update>
+	</mapper>

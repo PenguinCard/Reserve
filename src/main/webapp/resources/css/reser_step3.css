@@ -1,0 +1,498 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wrap{
+    width: 960px;
+    height: 700px;
+    background-image: url('../img/reserved/bg_warp.gif');
+}
+
+.clear{
+    clear: both;
+}
+
+h2{
+    width: 100%;
+    height: 25px;
+    background-image: url('../img/reserved/bg_tit.gif');
+    border-bottom: 1px solid #888;
+    position: relative;
+}
+.leftbody{
+    width: 720px;
+    height: 100%;
+    float: left;
+}
+.rLogo{
+    width: 110px;
+    height: 60px;
+    float: left;
+}
+
+#rLogoimg{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/reserved/h1_tit.gif');
+}
+.steps{
+    width: 600px;
+    height: 50px;
+    float: right;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+.steps > div{
+    width: 120px;
+    height: 50px;
+    overflow: hidden;
+    background-position: 0 8px;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+#stepimg1{
+    background-image: url('../img/reserved/img_gnb.gif');
+    background-position: 0 0px;
+}
+#stepimg2{
+    background-image: url('../img/reserved/img_gnb.gif');
+    background-position: -120px 0px;
+}
+#stepimg3{
+    background-image: url('../img/reserved/img_gnb.gif');
+    background-position: -240px -52px;
+}
+#stepimg4{
+    background-image: url('../img/reserved/img_gnb.gif');
+    background-position: -360px 0px;
+}
+#stepimg5{
+    background-image: url('../img/reserved/img_gnb.gif');
+    background-position: -480px 0px;
+}
+
+.container {
+    float: left;
+    width: 700px;
+    height: 90%;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.container h2 {
+    padding: 4px 0px 4px 0px;
+    background: url(../img/reserved/bg_tit.gif) repeat-x ;
+    border-bottom: 1px solid #bebebe;
+    display: block;
+    height: 17px;
+}
+
+#step3_promotion{
+    margin-bottom: 30px;
+}
+
+h2{
+    position: relative;
+    font-size: 1em;
+    margin-bottom: 25px;
+}
+
+.scroll {
+    height: 145px !important;;
+    overflow: scroll !important;;
+    overflow-x: hidden !important;;
+}
+
+.img2{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+
+.img3{
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+.promotionList
+{
+    padding: 20px 20px 30px;
+}
+
+.sale_table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+caption{
+    visibility: hidden;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.col{
+    display: table-column;
+}
+
+.table{
+    border-spacing: 2px;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+table.sale_table thead th {
+    height: 28px;
+    font-size: 11px;
+    font-weight: normal;
+    background-color: #efefef;
+    color: #888888;
+    font-family: �룍��;
+}
+
+table.sale_table tbody td {
+    border-bottom: 1px solid #dcdcdc;
+    padding: 5px;
+    height: 15px;
+    font: normal 11px �룍��;
+    text-align: center;
+    color: #888888;   
+}
+
+td.bold {
+    text-align: left !important;
+    padding-left: 20px !important;
+    font-weight: bold !important;
+}
+
+.add{
+    float: right;
+}
+
+.sale_select {
+    padding: 20px 20px 30px;
+    margin-top: -20px;
+}
+
+
+#selpromotion{
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    border-color: #bebebe;
+    color: #888888;
+    font-family: Arial;
+}
+
+.pnotice {
+    margin: 15px 0 0 8px;
+    font-size: 11px;
+}
+
+.red{
+    color: #ea4955;
+}
+
+/* �룷�뒪�꽣 �솕硫� */
+
+.rightbody{
+    width: 220px;
+    height: 100%;
+    float: left;
+    padding: 10px;
+}
+
+.rightTop{
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+
+#dataimg{
+    float: left;
+    width: 90px;
+    height: 100%;
+}
+
+#dataimg > img{
+    width: 100%;
+    height: 110px;
+}
+
+#datainfo{
+    width: 120px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.posttitle{
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.postetc{
+    margin-top: 5px;
+    color: #888;
+    font-size: 10px;
+    letter-spacing: -1px;
+}
+
+.bar{
+    width: 100%;
+    height: 2px;
+    background-image: url('../img/reserved/bg_result01.gif');
+    position: absolute;
+    bottom: 0px;
+}
+
+.rightsec{
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.selinfoTitle{
+    width: 100%;
+    height: 20px;
+    background-image: url('../img/reserved/h3_tit_result01.gif');
+    background-repeat: no-repeat;
+}
+
+.selinfo > ul{
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+}
+
+.selinfo > ul > li{
+    width: 100%;
+    height: 15px;
+    margin-top: 5px;
+}
+
+.selinfo > ul > li > div{
+    width: 20px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+    margin-top: 4px;
+}
+
+.tickinfo{
+    color: #fff;
+    font-size: 12px;
+    margin-left: 10px;
+    float: left;
+}
+#ticketdate{
+    background-image: url('../img/reserved/r_tit01.gif');
+}
+#tickettime{
+    background-image: url('../img/reserved/r_tit02.gif');
+}
+#ticketcnt{
+    background-image: url('../img/reserved/r_tit03.gif');
+}
+#ticketseat{
+    background-image: url('../img/reserved/r_tit04.gif');
+}
+
+
+/* 寃곗젣湲덉븸 */
+
+.rightthir{
+    width: 100%;
+    height: 130px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.payinfo{
+    width: 100%;
+    height: 100%;
+}
+
+#paytitle{
+    width: 100%;
+    height: 20px;
+    background-image: url('../img/reserved/h3_tit_result02.gif');
+    background-repeat: no-repeat;
+}
+.payinfo > ul{
+    width: 100%;
+    height: 150px;
+}
+
+.payinfo > ul > li{
+    width: 100%;
+    height: 15px;
+    margin-top: 5px;
+}
+
+.payinfo > ul > li > div{
+    width: 50px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+#payment{
+    background-image: url('../img/reserved/r_tit05.gif');
+}
+
+#payvat{
+    background-image: url('../img/reserved/r_tit06.gif');
+}
+#paydelivery{
+    background-image: url('../img/reserved/r_tit07.gif');
+}
+#totalpay{
+    background-image: url('../img/reserved/r_tit08.gif');
+}
+
+.payinfo .tickinfo{
+    float: right;
+    margin-right: 10px;
+}
+
+
+.rightfour{
+    width: 100%;
+    height: 170px;
+    position: relative;
+}
+
+.rightfour > ul{
+    width: 100%;
+    height: 140px;
+}
+
+.rightfour > ul > li{
+    width: 100%;
+    height: 15px;
+    margin-top: 5px;
+}
+
+.rightfour > ul > li > div{
+    width: 50px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+#salepay{
+    background-image: url('../img/reserved/r_tit09.gif');
+}
+#coupon{
+    background-image: url('../img/reserved/r_tit10.gif');
+}
+#yesmon{
+    background-image: url('../img/reserved/r_tit11.gif');
+}
+#defaltpay{
+    background-image: url('../img/reserved/r_tit12.gif');
+}
+#yesticket{
+    background-image: url('../img/reserved/r_tit14.gif');
+}
+#playticket{
+    background-image: url('../img/reserved/r_tit16.gif');
+}
+#etcpay{
+    background-image: url('../img/reserved/r_tit17.gif');
+}
+
+#totalsale{
+    background-image: url('../img/reserved/r_tit15.gif');
+}
+
+.rightfour > ul > li > p{
+    float: right;
+    margin-right: 10px;
+}
+
+
+/* 寃곗젣踰꾪듉 */
+
+
+.rightend{
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+}
+.rightend > ul {
+    width: 100%;
+}
+
+.rightend > ul > li{
+    width: 100%;
+    height: 30px;
+    color: #fff;
+}
+.finalpay{
+    width: 100%;
+    height: 30px;
+    background-image: url('../img/reserved/bg_total2.gif');
+    background-size: 100% 100%;
+    position: relative;
+}
+.finalpay > p{
+    float: left;
+    position: absolute;
+}
+
+.finalpay > .paycnt{
+    top: 3px;
+    right: 30px;
+}
+
+.finalpay > p:last-child{
+    top: 5px;
+    right: 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.btn{
+    position: relative;
+}
+
+
+#prevbtn{
+     float: left;
+    display: inline-block;
+    width: 105px;
+    height: 35px;
+    background-image: url('../img/reserved/btn_prev.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#nextstepbtn{
+    display: inline-block;
+    width: 105px;
+    height: 35px;
+    background-image: url('../img/reserved/btn_next02.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+

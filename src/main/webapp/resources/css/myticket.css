@@ -1,0 +1,712 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color:black;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+}
+
+.wrap{
+
+    width: 1000px;
+    height: 976px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.container{
+    width: 100%;
+    height: 520px;
+    
+    background-color:white;
+
+}
+
+.lnb{
+    width: 210px;
+    height: 859px;
+    /* background-color: yellow; */
+    float: left;
+}
+
+.mypage{
+    width: 100%;
+    height: 196px;
+    /* background-color: tomato; */
+
+}
+
+.mypage div.infor {
+    /* padding: 10px; */
+    border: 1px solid #d3d3d3;
+    background: #fbfbfb;
+    word-break: break-all;
+}
+
+.mypage span.grade {
+    color: #3c3c3c;
+    margin-top: 1px;
+    margin-left: 7px;
+    display: block;
+    letter-spacing: -0.1em;
+    padding: 10px 10px 0 10px;
+    font-size: 10px;
+    margin-bottom: 6px;
+    position: relative;
+}
+
+#warp img {
+    vertical-align: middle;
+}
+
+.infobtn{
+    position: absolute;
+}
+
+.mypage span.blue{
+    color: blue;
+}
+
+.type1{
+    width: 194px;
+    height: 65px;
+    background: url(../img/myticket/bg_mypage.gif) no-repeat -8px -69px;
+    padding: 9px;
+    margin: 0 0 2px 7px;
+    font-size: 10px;
+}
+
+.tc{
+    text-align: center !important;
+}
+
+ .my_lmenu{
+     width: 210px;
+     height: 167px;
+     background-color: teal;
+     background: url(../img/myticket/bg_lnb.gif) no-repeat;
+     margin-bottom: 15px;   
+ }
+
+ .my_lmenu ul {
+    padding: 5px 4px;
+    margin: 0;
+    text-align: center !important;
+    display: list-item;
+    text-align: center;
+}
+
+ .alignment{
+     width: 210px;
+     height: 296px;
+     /* background-color: yellowgreen; */
+     position: relative;
+    border: 1px solid #d3d3d3;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+ }
+ 
+ /* h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+} */
+
+ .alignment h3 {
+    padding: 7px 10px 6px 5px;
+    background-color: #f9f9fb;
+}
+
+.alignment p.more {
+    top: 11px;
+    right: 9px;
+    position: absolute;
+}
+
+.alignment h4 {
+    margin-top: 3px;
+    margin-bottom: 0;
+    padding: 0px 8px 3px;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    color: #3c3c3c;
+    clear: both;
+    font-size: 12px;
+}
+
+.alignment p.txt {
+    padding: 5px 10px 22px 22px;
+    background: url(../img/myticket/icon_re.gif) no-repeat 9px 3px;
+    line-height: 16px;
+    color: #d3d3d3;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 0;
+}
+a:visited{
+    text-decoration: none;
+}
+
+.list_theater {
+    clear: left;
+    padding: 5px 8px 22px 13px;
+    background: url(../img/myticket/icon_re.gif) no-repeat 9px 3px;
+    line-height: 16px;
+    color: #d3d3d3;
+    display: inline-block;
+}
+
+/* .list_theater li.sec {
+    background: url(../image/myticket/bg_th2.gif) no-repeat right;
+} */
+
+*.list_theater li {
+    display: inline;
+    zoom: 1;
+    float: none;
+    font-size: 12px;
+    padding: 0 12px;
+    /* height: 16px; */
+    overflow: hidden;
+    /* margin-bottom: 1px; */
+    word-break: break-all;
+}
+
+.calorder{
+    height: 25px;
+    
+}
+
+.cal {
+    cursor: pointer;
+    position: absolute;
+    
+}
+
+ .customerCenter{
+     width: 210px;
+     height: 147px;
+     background-color: blue;
+     margin-bottom: 11px;
+    background: #f9f9fb;
+    border: 1px solid #d3d3d3;
+ }
+
+ .customerCenter .title {
+    height: 33px;
+    background: url(../img/myticket/customer_tit_line.gif) left bottom repeat-x;
+}
+
+.customerCenter .title strong {
+    display: block;
+    padding: 10px 0 0 35px;
+    font-size: 14px;
+    color: #3c3c3c;
+    background: url(../img/myticket/ico_tel.gif) 15px 11px no-repeat;
+    letter-spacing: -0.5px;
+}
+
+.customerCenter .telNum {
+    padding: 15px 0 20px 24px;
+}
+
+.customerCenter .telNum ul {
+    margin: 10px 0 0 2px;
+    height: 41px;
+    border-left: 1px solid #bfbfc0;
+}
+
+.customerCenter .telNum li {
+    padding-left: 6px;
+    font-size: 11px;
+    line-height: 14px;
+}
+
+ /* .clear::after {
+    content: "";
+    display: block;
+    clear: both;
+    } */
+
+ .mypage_contain{
+     width: 730px;
+     height: 892px;
+     /* background-color: blueviolet; */
+     position: relative;
+    margin-bottom: 40px; 
+    float: right;
+ }
+
+
+ .blue_box{
+     width: 360px;
+     height: 89px;
+     /* background-color: brown; */
+     margin-bottom: 25px;
+     float: left;
+     
+ }
+
+ .blue_box h2 {
+    border: 1px solid #6d88a3;
+    background: url(../img/myticket/bg_tit01.gif) repeat-x;
+    padding: 8px 10px 6px 13px;
+    height: 14px;
+}
+
+.coupon{
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.blue_box ul {
+    border: 1px solid #d3d3d3;
+    border-top: none;
+    padding: 11px 10px 7px 12px;
+    height: 40px;
+}
+
+.blue_box ul li {
+    background: url(../img/myticket/icon_dot.gif) no-repeat 2px 6px;
+    padding-left: 8px;
+    margin-bottom: 4px;
+    font-size: 12px;
+}
+
+.boxmore{
+    float: right;
+}
+
+ .blue_boxfr{
+    
+    width: 360px;
+    height: 89px;
+    /* background-color: bisque; */
+    float: right;
+    position: absolute;
+    top: 0px;
+    margin-left: 30px;
+    left: 340px;
+    padding-left: 0;
+
+ }
+
+ .event{
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+ .blue_boxfr h2 {
+    border: 1px solid #6d88a3;
+    background: url(../img/myticket/bg_tit01.gif) repeat-x;
+    padding: 8px 10px 6px 13px;
+    height: 14px;
+}
+
+.blue_boxfr h2 span {
+    font-size: 11px;
+    color: #FFFFFF;
+    font-weight: normal;
+    position: absolute;
+    margin-left: 60px;
+}
+
+.blue_boxfr ul {
+    border: 1px solid #d3d3d3;
+    border-top: none;
+    padding: 11px 10px 7px 12px;
+    height: 40px;
+}
+
+.blue_boxfr ul li {
+    background: url(../img/myticket/icon_dot.gif) no-repeat 2px 6px;
+    padding-left: 8px;
+    margin-bottom: 4px;
+    font-size: 12px;
+}
+
+.mycont{
+    /* display: block; */
+    width: 730px;
+    height: 115px;
+    /* background-color: burlywood; */
+    clear: both;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.mycont h2 {
+    margin-bottom: 7px;
+}
+
+.mycont h2 span {
+    margin-left: 10px;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.mycont table {
+    margin-bottom: 25px;
+}
+
+.tmypage {
+    width: 100%;
+    margin-bottom: 15px;
+    table-layout: fixed;
+    border-top: 2px solid #4e7ad1;
+    border-collapse: collapse;
+}
+
+colgroup {
+    display: table-column-group;
+}
+
+.tmypage th {
+    padding: 8px 5px;
+    border-bottom: 1px solid #d3d3d3;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+}
+
+.tmypage th {
+    color: #666;
+    letter-spacing: -1px;
+    font-weight: normal;
+    background-color: #f9f9fb;
+    text-align: center;
+    font-size: 12px;
+}
+
+.tmypage th.end {
+    border-right: 1px solid #d3d3d3;
+}
+
+.tmypage td.ri {
+    border-right: none;
+}
+
+.tmypage td.le {
+    border-left: none;
+}
+
+.tmypage td {
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    font-size: 11px;
+    text-align: center;
+    color: #666666;
+}
+
+.tmypage td {
+    padding: 8px 5px;
+    border-bottom: 1px solid #eeeeee;
+    text-align: center;
+}
+
+.mycont h2 a {
+    margin-left: 10px;
+}
+
+.mycont2{
+    width: 730px;
+    height: 180px;
+    margin-bottom: 5px;
+    /* background-color: chartreuse; */
+}
+
+.mycont2 h2 {
+    margin-top: 2px;
+    margin-bottom: 7px;
+}
+
+.mycont2 h2 span {
+    margin-left: 10px;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.mycont2 a.alink {
+    text-decoration: underline;
+    margin-left: 0px;
+}
+
+.mycont2 .point ul {
+    margin:0;
+    padding-top: 0px;
+    padding-bottom: 3px;
+}
+
+.mycont2 .point li {
+    display: inline-block;
+    color: #666;
+    background: url(../img/myticket/ic_hdot.gif) no-repeat 0px 2px;
+    padding: 0px 3px 3px 10px;
+    background-color: #f9f9fb;
+    font-size: 12px;
+
+}
+
+.mycont2 .point li img {
+    margin: -3px 2px 0 2px;
+}
+
+.mycont2 table {
+    margin-bottom: 25px;
+}
+
+.tmypage2 {
+    width: 100%;
+    margin-bottom: 15px;
+    table-layout: fixed;
+    border-top: 2px solid #4e7ad1;
+    border-collapse: collapse;
+}
+
+colgroup {
+    display: table-column-group;
+}
+
+.tmypage2 th {
+    padding: 8px 5px;
+    border-bottom: 1px solid #d3d3d3;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+}
+
+.tmypage2 th {
+    color: #666;
+    letter-spacing: -1px;
+    font-weight: normal;
+    background-color: #f9f9fb;
+    text-align: center;
+    font-size: 12px;
+}
+
+.tmypage2 td {
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    font-size: 11px;
+    text-align: center;
+    color: #666666;
+}
+
+.mycont2 .point_txt {
+    margin-top: -17px;
+    font-size: 11px;
+    
+    text-align: right;
+    padding-right: 10px;
+}
+
+.tmypage2 td.ri {
+    border-right: none;
+}
+
+.tmypage2 td.le {
+    border-left: none;
+}
+
+.tmypage2 td {
+    padding: 8px 5px;
+    border-bottom: 1px solid #eeeeee;
+    text-align: center;
+}
+
+
+.mycont3{
+    width: 730px;
+    height: 115px;
+    /* background-color: coral; */
+    clear: both;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.mycont3 h2 {
+    margin-bottom: 7px;
+}
+
+.mycont3 h2 span {
+    margin-left: 10px;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.mycont3 h2 span {
+    margin-left: 10px;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.my_list01 {
+    border: 1px solid #d2d2d2;
+    /* border-top: 2px solid #4e7ad1; */
+    display: inline-block;
+}
+
+.my_list01 li.nocont {
+    text-align: center;
+    width: 728px;
+    border-top: 2px solid #4e7ad1;
+    padding-top: 0px;
+    padding-bottom: 34px;
+    _height: 70px;
+}
+
+.my_list01 li {
+    float: left;
+    background-color: #f9f9fb;
+    _display: inline-block;
+    _overflow: hidden;
+    _height: 100px;
+    padding-bottom: 5px;
+}
+
+.my_list01 li.nocont span {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 3px;
+    padding-top: 32px;
+    border-top: 1px solid #d2d2d2;
+}
+
+.mycont4{
+    width: 730px;
+    height: 115px;
+    /* background-color: darkblue; */
+    clear: both;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.mycont4 h2 {
+    margin-bottom: 7px;
+}
+
+.mycont4 h2 a {
+    margin-left: 10px;
+}
+
+.mycont4 .watch {
+    /* border-top: 2px solid #9172d1; */
+}
+
+.my_list01 {
+    border: 1px solid #d2d2d2;
+    /* border-top: 2px solid #4e7ad1; */
+    display: inline-block;
+}
+
+.my_list01 li {
+    float: left;
+    background-color: #f9f9fb;
+    border: 1px solid #d2d2d2;
+}
+
+.my_list01 li.nocont {
+    text-align: center;
+    width: 728px;
+    padding-bottom: 35px;
+    _height: 70px;
+}
+
+.my_list01 li.nocont span {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 3px;
+    padding-top: 32px;
+    border-top: 1px solid #d2d2d2;
+}
+
+.mycont5{
+    width: 730px;
+    height: 115px;
+    /* background-color: darkgoldenrod; */
+    clear: both;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.mycont5 h2 {
+    margin-bottom: 7px;
+}
+
+.mycont5 h2 span {
+    margin-left: 10px;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.mycont5 h2 a.tbtn {
+    float: right;
+    margin-top: -2px;
+    margin-right: 5px;
+}
+
+.mycont5 h2 a {
+    margin-left: 10px;
+}
+
+.mycont5 table {
+    margin-bottom: 25px;
+}
+
+colgroup {
+    display: table-column-group;
+}
+
+.table_blue {
+    width: 100%;
+    table-layout: fixed;
+    border: 2px solid #4e7bce;
+    
+}
+
+.table_blue th {
+    padding: 8px 5px;
+    border-bottom: 1px solid #b6c1dd;
+    border-left: 1px solid #b6c1dd;
+    border-right: 1px solid #b6c1dd;
+}
+
+.table_blue th {
+    color: #666;
+    letter-spacing: -1px;
+    background-color: #f4f9ff;
+    font-size: 11px;
+}
+
+.table_blue td {
+    border-left: 1px solid #b6c1dd;
+    border-right: 1px solid #b6c1dd;
+    font-size: 12px;
+    color: #666666;
+}
+
+.table_blue td {
+    padding: 8px 5px;
+    border-bottom: 1px solid #b6c1dd;
+    text-align: left;
+    padding-left: 20px;
+}
+

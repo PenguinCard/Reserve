@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappers.MemberList">
+
+	<select id="selectMaxId" resultType="int">
+		<![CDATA[ select MAX(member_id) from y_members ]]>
+	</select>
+	
+	<select id="selectId" resultType="String" parameterType="String">
+		select distinct mem_id from y_members where mem_id=#{mem_id}
+	</select>
+	
+	<insert id="insertMember" parameterType="memberDTO">
+		insert into y_members(MEMBER_ID, MEM_ID, MEM_PW, MEM_NAME, MEM_BIRTH_YEAR, MEM_BIRTH_MONTH, MEM_BIRTH_DAY,
+                      MEM_PHONE1, MEM_PHONE2, MEM_PHONE3
+                      <if test="mem_tel1!=null and mem_tel1!=''"> <!--동적sql조건문 -->
+                      		, MEM_TEL1
+                      </if>
+                      <if test="mem_tel2!=null and mem_tel2!=''">
+                      		, MEM_TEL2
+                      </if>
+                      <if test="mem_tel3!=null and mem_tel3!=''">
+                      		, MEM_TEL3
+                      </if>
+                      <if test="mem_address1!=null and mem_address1!=''">
+                      		, MEM_ADDRESS1
+                      </if>
+                      <if test="mem_address2!=null and mem_address2!=''">
+                      		, MEM_ADDRESS2
+                      </if>
+                      <if test="mem_address3!=null and mem_address3!=''">
+                      		, MEM_ADDRESS3
+                      </if>
+                      <if test="mem_email1!=null and mem_email1!=''">
+                      		, MEM_EMAIL1
+                      </if>
+                      <if test="mem_email2!=null and mem_email2!=''">
+                      		, MEM_EMAIL2
+                      </if>) values(#{member_id}, #{mem_id}, #{mem_pw}, #{mem_name},
+                      #{mem_birth_year}, #{mem_birth_month}, #{mem_birth_day}, 
+                      #{mem_phone1}, #{mem_phone2}, #{mem_phone3} 
+                      <if test="mem_tel1!=null and mem_tel1!=''">
+                      		, #{mem_tel1}
+                      </if>
+                      <if test="mem_tel2!=null and mem_tel2!=''">
+                      		, #{mem_tel2}
+                      </if>
+                      <if test="mem_tel3!=null and mem_tel3!=''">
+                      		, #{mem_tel3}
+                      </if>
+                      <if test="mem_address1!=null and mem_address1!=''">
+                      		, #{mem_address1}
+                      </if>
+                      <if test="mem_address2!=null and mem_address2!=''">
+                      		, #{mem_address2}
+                      </if>
+                      <if test="mem_address3!=null and mem_address3!=''">
+                      		, #{mem_address3}
+                      </if>
+                      <if test="mem_email1!=null and mem_email1!=''">
+                      		, #{mem_email1}
+                      </if>
+                      <if test="mem_email2!=null and mem_email2!=''">
+                      		, #{mem_email2}
+                      </if>)
+	</insert>
+</mapper>

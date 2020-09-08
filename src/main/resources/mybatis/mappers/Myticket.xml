@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappers.Myticket">
+<insert id="insertmyticket" parameterType="myticketDTO">
+insert into y_myticket(name, bookno, title, showdate, cnt, state) values(
+	#{name},myticketseq.nextval,#{title},#{showdate},#{cnt},#{state}
+)
+</insert>
+
+<select id="selectmyticket" resultType="myticketDTO" parameterType="myticketDTO">
+select * from y_myticket where name=#{name}
+</select>
+</mapper>

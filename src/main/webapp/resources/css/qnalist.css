@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-color: #e8e8e8;
+}
+
+table, th, tr, td{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    background-color: #fff; 
+    
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.wrap{
+    width: 70%;
+    margin: 30px auto;
+}
+
+.aside{
+    width: 180px;
+}
+
+.aside > ul{
+    font-weight: bold;
+    padding-left: 20px;
+    margin: 20px 0;
+
+}
+
+.aside > ul > li{
+    width: 100%;
+    height: 14px;
+    font-weight: normal;
+    font-size: 12px;
+    margin: 5px 0;
+    position: relative;
+    background-color: #fff;
+}
+
+.aside > ul > li > a{
+    width: 100%;
+    height: 100%;
+    color: #999;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.aside + td {
+    width: 700px;
+}
+
+
+/* �쇊履� ���씠�� */
+
+#asidetitle{
+    height: 100px;
+    background-image: url('../image/qna/bgCsCenter.png');
+    background-repeat: no-repeat;
+    background-position: -820px -100px;
+    color: #fff;
+    font-size: 22px;
+}
+
+/* �삤瑜몄そ ���씠�� */
+
+#rightTitle {
+    padding: 10px 30px;
+    padding-bottom: 0;
+}
+.qnalist{
+    text-align: left;
+    float: left;
+    line-height: 30px;
+}
+
+.qnalist:first-child{
+    font-size: 24px;
+}
+
+.qnalist:last-child{
+    width: 130px;
+    height: 30px;
+    float: right;
+
+    padding: 5px 0;
+    position: relative;
+
+    border: 1px solid #ccc;
+}
+
+.qnalist:last-child > a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: 600;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* 怨듭��궗�빆 */
+
+#notice{
+    height: 20px;
+}
+
+
+#notice > ul > li.not{
+    display:block;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+#notice > ul > li > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.arrow{
+   width: 10px;
+   height: 20px;
+   background-image: url('../img/qna/bgYUI.png');
+   background-position: -140px -240px;
+   position: absolute;
+   top: 5px;
+   right: 80px;
+}
+
+
+/* ARS�븞�궡 */
+.arsinfo{
+    width: 130px;
+    height: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    padding: 5px;
+    position: relative;
+}
+
+.arsinfo > a{
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* �쟾�솕 臾몄쓽 */
+
+.phonEx{
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.phonEx > div{
+    margin: 5px 0;
+}
+
+.phontitle{
+    font-size: 14px;
+}
+
+.phonnum{
+    font-weight: bold;
+}
+
+.phondate{
+    font-size: 12px;
+    color: #999;
+}
+
+
+
+/* QNA �궡�슜 */
+
+#qnamain{
+    position: relative;
+}
+
+.contents{
+    position: absolute;
+    top: 80px !important;
+    left: 30px;
+}
+
+#board {
+    width: 90%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#qnaboard table th {
+    background: #f8f8f8;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px;
+    color: #232323;
+    line-height: 18px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#qnaboard table td {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    
+    vertical-align: middle;
+    font-size: 13px;
+    color: #727179;
+    min-height: 28px;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+table.board thead th {
+    height: 28px;
+    font-size: 11px;
+    font-weight: normal;
+    background-color: #efefef;
+    color: #888888 !important;
+    font-family: �룍��;
+}
+
+.paging .prev, .paging .next {
+    background: 0 none;
+    padding: 0;
+}
+
+.paging {
+    position: relative;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.paging * {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.paging a {
+    margin-top: 10px;
+    padding: 16px 15px 10px;
+    color: #666;
+    font-family: 援대┝;
+    font-size: 11px;
+    border: 1px solid #ddd;
+}
+
+.prev{
+    left: 15px;
+    align-items: center;
+}
+
+#left{
+    position: absolute;
+    top: 15px;
+    left: 70px;
+}
+
+#right{
+    position: absolute;
+    top: 15px;
+    right: 70px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.clear{
+    clear: both;
+}
+
+aside{
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    left: -300px;
+    top: 0;
+    z-index:999;
+    background-color: rgba(0,0,0,0.6);
+
+    transition: all 0.5s;
+}
+
+.allMenu{
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+   
+    position: relative;
+}
+
+.menubtn{
+    width: 200px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.allbtn{
+    margin: 35px 0 0 20px;
+    overflow: hidden;
+}
+
+.bar{
+    display: block;
+    width: 22px;
+    height: 3px;
+    border-bottom: 2px solid #fff;
+    margin-top: 2px;
+}
+
+#bar1{
+    transform: translateX(0);
+}
+#bar2{
+    transform: translateX(-10px);
+}
+#bar3{
+    transform: translateX(0);
+}
+
+.closebtn{
+    width: 30px;
+    height: 30px;
+    border: 2px solid #666;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    right: -15px;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.closebtn > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('../img/aside/drop-close.png');
+    background-repeat: no-repeat;
+    background-position: 3px 3px;
+}
+
+
+
+/* 스크롤바 */
+
+
+.allMenulist{
+    height: 850px;
+    padding-right: 20px;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.allMenulist::-webkit-scrollbar{
+    width: 5px;
+    height: 100%;
+}
+
+.allMenulist::-webkit-scrollbar-thumb{
+    width: 3px;
+    height: 500px;
+    background-color: #999;
+    border-radius: 5px;
+}
+
+.allMenulist::-webkit-scrollbar-track{
+    width: 2px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+
+
+/* 전체 장르 메뉴 */
+
+.thema-side{
+    width: 150px;
+    margin: 10px 0 0 20px;
+}
+
+.thema-side li{
+    margin-top: 10px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.thema-side > ul > li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+
+    border-bottom: 3px solid #e2782a;
+
+    transition: all 0.5s;
+}
+
+.thema-side a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+
+/* 전체 장르의 서브메뉴 설정 */
+
+.smenu{
+    overflow: hidden;
+    transition: max-height 0.7s;
+    max-height: 0;
+    margin-top: 10px;
+}
+.smenu > li{
+    margin: 0;
+ 
+}
+
+.smenu > li > a{
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 0;
+
+    position: relative;
+
+    color: #ccc;
+    transition: all 0.2s;
+    padding-right: 3px;
+
+}
+
+.hovarrow{
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: -15px;
+    top: 5px;
+
+    overflow: hidden;
+
+  
+
+}
+
+.hovarrow::after{
+    content: '';
+    width: 0px;
+    height: 5px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -2px;
+    top: 2px;
+
+}
+
+
+/*장르 메뉴 호버 이벤트 */
+
+.thema-side li:hover .smenu{
+    max-height: 10em;
+}
+.thema-side > ul > li:hover::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+
+    border-bottom: 3px solid #e2782a;
+}
+
+
+.smenu > li:hover > a{
+    color: #fff;
+}
+
+.smenu > li:hover .hovarrow::after{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -2px;
+    top: 2px;
+
+}
+
+
+
+/* 중간 메뉴 */
+
+.middleTap{
+    width: 150px;
+    height: 50px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    margin: 30px 0 30px 20px;
+    
+
+}
+
+.middleTap > ul > li{
+    float: left;
+    line-height: 45px;
+    margin-right: 18px;
+    font-size: 14px;
+    position: relative;
+}
+.middleTap > ul > li:last-child{
+    float: right;
+    margin-right: 0;
+}
+
+.middleTap > ul >li:after{
+    content: '';
+    width: 3px;
+    height: 15px;
+    border-right: 1px solid #999;
+    position: absolute;
+    top: 18px;
+    right: -10px;
+}
+
+.middleTap > ul > li:last-child::after{
+    border: none;
+}
+
+.middleTap > ul > li > a{
+    color: #999;
+}
+
+.middleTap > ul > li:hover > a{
+    color: #fff;
+}
+
+
+
+/* 공지사항메뉴 */
+
+.note{
+    width: 150px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #999;
+}
+
+.note > ul >li{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.note > ul > li > a{
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 0;
+
+    position: relative;
+    transition: all 0.2s;
+    padding-right: 3px;
+}
+
+
+.note > ul > li:hover .hovarrow::after{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -2px;
+    top: 2px;
+}
+
+
+/* 마이티켓 */
+
+.myTicket{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.myTicket > ul{
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.myTicket > ul > li{
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.myTicket > ul > li > a{
+    display: inline-block;
+    color: #999;
+    transition: all 0.2s;
+
+    position: relative;
+}
+
+
+.myTicket > ul > li:hover > a{
+    color: #fff;
+}
+
+
+
+
+.myTicket > ul > li:hover .hovarrow::after{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -2px;
+    top: 2px;
+}
+
+
+
+/* 썸네일 슬라이드 */
+
+.thumbslide{
+    width: 100px;
+    height: 130px;
+    margin: 20px 20px;
+    background-color: #333;
+    overflow: hidden;
+    position: relative;
+}
+
+#thumbimg1
+{
+    width: 50px;
+    height: 80px;
+    background-image: url('../img/detail/la_lumiere/m_la_lumiere_post.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    margin: 20px auto;
+}
+
+.thumbbtn{
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+#thumbprev{
+    width: 10px;
+    height: 100%;
+    background-image: url('../img/aside/gnbslide-prev.png');
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 10px;
+}
+
+#thumbnext{
+    width: 10px;
+    height: 100%;
+    background-image: url('../img/aside/gnbslide-next.png');
+    background-repeat: no-repeat;
+    float: right;
+    margin-right: 10px;
+}
+.imgcount {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+
+    font-size: 12px;
+}
+
+.imgcount > p{
+    color: #999;
+}
+
+.imgcount > p > span{
+    color: #fff;
+}
+
+
+
+
+
+
+/* 언어, MD */
+.subAnother{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0 40px 20px;
+}
+
+.subAnother > ul > li{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 30px;
+    color: #999;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 20px;
+
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.subAnother > ul > li:hover{
+    color: #fff;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappers.ConcertDetail">
+ 
+
+ <select id="selectall" resultType="ConcertDetailDTO" parameterType="ConcertDetailDTO">
+ select * from y_concert_detail
+ where con_detail_id=#{con_detail_id}
+ </select>
+ 
+ <select id="selectimagemain" resultType="ConcertDetailDTO" parameterType="ConcertDetailDTO">
+ select con_detail_imagelist_name, con_detail_title from y_con_detail_imagelist
+ where con_detail_imagelist_id=#{con_detail_imagelist_id}
+ and con_detail_imagelist_section='main'
+ </select>
+ 
+ <select id="selectimageinfo" resultType="ConcertDetailDTO" parameterType="ConcertDetailDTO">
+ select con_detail_imagelist_name, con_detail_title from y_con_detail_imagelist
+ where con_detail_imagelist_id=#{con_detail_imagelist_id}
+ and con_detail_imagelist_section='info'
+ </select>
+ 
+ <select id="selectgenre" resultType="ConcertDetailDTO" parameterType="ConcertDetailDTO"> 
+ select genre 
+ from y_concert_detail
+ where con_detail_id=#{con_detail_id}
+ </select>
+ 
+ 
+ </mapper>
+ 
+ 

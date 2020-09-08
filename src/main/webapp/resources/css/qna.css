@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-color: #e8e8e8;
+}
+table, th, tr, td{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    background-color: #fff;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.wrap{
+    width: 70%;
+    margin: 30px auto;
+}
+
+.aside{
+    width: 180px;
+}
+
+.aside > ul{
+    font-weight: bold;
+    padding-left: 20px;
+    margin: 20px 0;
+
+}
+
+.aside > ul > li{
+    width: 100%;
+    height: 14px;
+    font-weight: normal;
+    font-size: 12px;
+    margin: 5px 0;
+    position: relative;
+    background-color: #fff;
+}
+
+.aside > ul > li > a{
+    width: 100%;
+    height: 100%;
+    color: #999;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.aside + td {
+    width: 700px;
+}
+
+
+/* �쇊履� ���씠�� */
+
+#asidetitle{
+    height: 100px;
+    background-image: url('../image/qna/bgCsCenter.png');
+    background-position: -820px -100px;
+    color: #fff;
+    font-size: 22px;
+}
+
+/* �삤瑜몄そ ���씠�� */
+
+#rightTitle {
+    padding: 10px 30px;
+    padding-bottom: 0;
+}
+.qnalist{
+    text-align: left;
+    float: left;
+    line-height: 30px;
+}
+
+.qnalist:first-child{
+    font-size: 24px;
+}
+
+.qnalist:last-child{
+    width: 130px;
+    height: 30px;
+    float: right;
+
+    padding: 5px 0;
+    position: relative;
+
+    border: 1px solid #ccc;
+}
+
+.qnalist:last-child > a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: 600;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* 怨듭��궗�빆 */
+
+#notice{
+    height: 20px;
+}
+
+
+#notice > ul > li.not{
+    display:block;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+#notice > ul > li > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.arrow{
+   width: 10px;
+   height: 20px;
+
+   background-image: url('../image/qna/bgYUI.png');
+   background-position: -140px -240px;
+   
+
+   position: absolute;
+   top: 5px;
+   right: 80px;
+
+}
+
+
+/* ARS�븞�궡 */
+.arsinfo{
+    width: 130px;
+    height: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    padding: 5px;
+    position: relative;
+}
+
+.arsinfo > a{
+    width: 100%;
+    height: 100%;
+
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* �쟾�솕 臾몄쓽 */
+
+.phonEx{
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.phonEx > div{
+    margin: 5px 0;
+}
+
+.phontitle{
+    font-size: 14px;
+}
+
+.phonnum{
+    font-weight: bold;
+}
+
+.phondate{
+    font-size: 12px;
+    color: #999;
+}
+
+
+
+/* QNA �궡�슜 */
+
+#qnamain{
+    padding: 0 20px;
+}
+
+#mainnoticeqna{
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table#select{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+table#select tr{
+    height: 40px;
+    width: calc((100% - 62px)/2);
+    float: left;
+    border: none;
+    border-right: 1px solid #ccc;
+    float: left;
+
+    line-height: 40px;
+    font-weight: bold;
+
+    padding-left: 30px;
+}
+
+#select tr:last-child{
+    border-radius: none;
+    background-color: #f8f8f8;
+    color: #999;
+}
+
+#select tr > td{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+
+    position: relative;
+}
+
+#selbox1 > td > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.boxarrow{
+    width: 20px;
+    height: 10px;
+    background-image: url('../image/qna/bgYUI.png');
+    background-position: -260px -280px;
+
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.decobox{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+
+    transform: rotate(45deg);
+
+    position: absolute;
+    top: 5px;
+    right: -15px;
+
+    box-sizing: border-box;
+}
+
+
+/* faq 硫붿씤 */
+
+#faqtap{
+    width: 100%;
+    margin-top: 40px;
+    text-align: left;
+}
+
+#faqtap tr{
+    display: block;
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+
+    position: relative;
+}
+
+#faqtap tr:last-child{
+    border-bottom: none;
+}
+
+#faqtap tr > th,
+#faqtap tr > td{
+    border: none;
+}
+
+
+
+.faqarrow{
+    display: block;
+    width: 20px;
+    height: 10px;
+
+    background-image: url('../image/qna/bgYUI.png');
+    background-position: -260px -280px;
+
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+#faqtap th > .faqarrow{
+    background-image: url('../image/qna/bgYUI.png');
+    background-position: -260px -290px;
+}
+
+.red{
+    color: red;
+}
+
+.graybg{
+    background-color: #f8f8f8;
+}
+
+.graybg > td{
+    background-color: transparent;
+}
+
+
+/* 臾몄쓽 �궡�슜 */
+
+#qnaconts{
+    width: 100%;
+    margin-top: 50px;
+}
+
+#qnacont{
+    width: 100%;
+    border: none;
+}
+
+#qnacont tr{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+#qnacont th{
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border: none;
+    border-right: 1px solid #ccc;
+}
+
+#qnacont td{
+    padding: 10px 20px;
+    border: none;
+    border-right: 1px solid #ccc;
+}
+
+#qnacont td:last-child{
+    border-right: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+input[type="text"]#qnamain{
+    width: calc(100% - 40px);
+    height: 30px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+#contsnote{
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* �뙆�씪泥⑤� */
+
+#fileup{
+   width:300px;
+   height: 50px;
+   position: relative;
+   left: -80px;
+   z-index:1;
+}
+
+
+#contfile label{
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-weight: bold;
+    position:relative;
+    z-index: 2;
+    background-color: #fff;
+}
+.upload-name { 
+    display: inline-block; 
+    padding: .5px .75px; 
+    font-size: inherit;
+    font-family: inherit; 
+    line-height: normal; 
+    vertical-align: middle; 
+    background-color: transparent; 
+    border: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    appearance: none; }
+
+
+#contfilenote{
+    font-size: 12px;
+    color: #666;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+
+/* �떟蹂��븣由� */
+
+#anseralam > td > div{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+#anseralam > td > div > input[type="text"]{
+    width: 250px;
+    height: 100%;
+    border: 1px solid #eee;
+    background-color: #f8f8f8;
+    color: #666;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+/* �셿猷� 踰꾪듉 */
+
+.finbtn{
+    width: 500px;
+    margin: 20px auto;
+}
+
+input[type="reset"],
+input[type="submit"]{
+    display: none;
+}
+
+
+.finbtn > label{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+#resetbtn{
+    border-color: #ccc;
+}
+
+#sucbtn{
+    border-color: #196ab3;
+    background-color: #196ab3;
+    color: #fff;
+}
+
+#removebtn{
+	 border-color: #196ab3;
+    background-color: #f00;
+    color:#fff;
+    border:none;
+    
+}
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappers.Qna">
+<select id="selectlist" resultType="QnaDTO" >
+select level, articleno, parentno, lpad(' ', 4*(level-1)) || title title, content, writedate, writer_id
+from y_board
+start with parentno=0
+connect by prior articleno=parentno
+order siblings by articleno desc
+</select>
+
+<select id="insertarticle"  parameterType="QnaDTO">
+insert into y_board(articleno, title, content, parentno, writer_id) <!-- imageFileName -->
+values(#{articleno}, #{title}, #{content}, #{parentno}, #{writer_id}) <!-- #{imageFileName}, #{writer_id} -->
+</select>
+
+
+<!--articleno가져오는 쿼리  -->
+<select id="selectnvl" resultType="int">
+select max(nvl(articleno,0))+1 from y_board
+</select>
+
+<update id="updatearticle" parameterType="QnaDTO">
+update y_board
+set title=#{title}, content=#{content}
+where articleno=#{articleno}
+</update>
+
+<delete id="deletearticle" parameterType="int">
+delete from y_board
+where articleno in (
+ select articleno from y_board
+ start with articleno=#{articleno} <!--articleno지우기  -->
+ connect by prior articleno=parentno <!--parento 즉 articleno과 같은 댓글지우기 -->
+)
+</delete>
+
+<select id="selectdetail" resultType="QnaDTO" parameterType="int">
+select title, content 
+from y_board
+where articleno=#{ariticleno}
+</select>
+
+<select id="selectNewimagefileno" resultType="QnaDTO">
+select nvl(max(imagefileno,0)) form y_board
+</select>
+
+<select id="selectimagefilelist" resultType="QnaDTO" parameterType="int">
+select imagefilename, imagefileno,  
+from y_board
+where articleno=#{ariticleno}
+</select>
+
+</mapper>

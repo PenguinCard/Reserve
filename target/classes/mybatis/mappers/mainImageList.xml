@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappers.mainImageList">
+	
+	<select id="selectSlide" resultType="mainImage">
+		<![CDATA[ select * from y_main_textlist txt
+				  inner join y_sub_main_imagelist img
+				  on txt.main_textlist_id=img.sub_main_id
+				  where sub_main_subject='main' 
+				  and sub_main_sector='slide' 
+				  order by sub_main_imagename ]]>
+	</select>
+	
+	<select id="selectThumb" resultType="mainImage">
+		<![CDATA[ select * from y_sub_main_imagelist 
+				  where sub_main_subject='main' 
+				  and sub_main_sector='thumb' 
+				  order by sub_main_imagename ]]>
+	</select>
+	
+	<select id="selectHots1" resultType="mainImage">
+		<![CDATA[ select * from y_main_textlist txt
+				  inner join y_sub_main_imagelist img
+				  on txt.main_textlist_id=img.sub_main_id 
+				  where sub_main_subject='main' 
+				  and sub_main_id BETWEEN 11 and 13 
+				  order by sub_main_id ]]>
+	</select>
+	<select id="selectHots2" resultType="mainImage">
+		<![CDATA[ select * from y_main_textlist txt
+				  inner join y_sub_main_imagelist img
+				  on txt.main_textlist_id=img.sub_main_id 
+				  where sub_main_subject='main' 
+				  and sub_main_id BETWEEN 14 and 16 
+				  order by sub_main_id ]]>
+	</select>
+	<select id="selectRank" resultType="mainImage">
+		<![CDATA[ select * from y_main_textlist txt
+				  inner join y_sub_main_imagelist img
+				  on txt.main_textlist_id=img.sub_main_id 
+				  where sub_main_id BETWEEN 21 and 23 
+				  order by sub_main_id ]]>
+				  
+		
+	</select>
+	<select id="selectRank2" resultType="mainImage">
+		<![CDATA[ select * from y_main_textlist txt
+				  inner join y_sub_main_imagelist img
+				  on txt.main_textlist_id=img.sub_main_id 
+				  where sub_main_id BETWEEN 24 and 26 
+				  order by sub_main_id ]]>
+	</select>
+	
+	<select id="selectRank3" resultType="mainImage">
+		<![CDATA[ select * from y_main_textlist txt
+				  inner join y_sub_main_imagelist img
+				  on txt.main_textlist_id=img.sub_main_id 
+				  where sub_main_id BETWEEN 27 and 29 
+				  order by sub_main_id ]]>
+	</select>
+	
+	<select id="selectRank4" resultType="mainImage">
+		<![CDATA[ select * from y_main_textlist txt
+				  inner join y_sub_main_imagelist img
+				  on txt.main_textlist_id=img.sub_main_id 
+				  where sub_main_id BETWEEN 51 and 52 
+				  order by sub_main_id ]]>
+	</select>
+	
+	<select id="selectRank5" resultType="mainImage">
+		<![CDATA[ select * from y_main_textlist txt
+				  inner join y_sub_main_imagelist img
+				  on txt.main_textlist_id=img.sub_main_id 
+				  where sub_main_id=53 
+				  order by sub_main_id]]>
+	</select>
+	
+	<select id="selectMusicPlay" resultType="mainImage">
+		<![CDATA[ select * from y_main_textlist txt
+				  inner join y_sub_main_imagelist img
+				  on txt.main_textlist_id=img.sub_main_id 
+				  where sub_main_id BETWEEN 31 and 36 
+				  ORDER by sub_main_id ]]>
+	</select>
+	
+	<select id="selectConcertClassic" resultType="mainImage">
+		<![CDATA[ select * from y_main_textlist txt
+				  inner join y_sub_main_imagelist img
+				  on txt.main_textlist_id=img.sub_main_id
+				  where sub_main_id BETWEEN 41 and 46 
+				  ORDER by sub_main_id ]]>
+	</select>
+</mapper>

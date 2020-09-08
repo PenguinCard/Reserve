@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappers.subImageList">
+
+<select id="selectSlideImage" resultType="subSlideImage" parameterType="String">
+	<![CDATA[ select img.sub_main_id	, img.sub_main_sector sector, img.sub_main_name name, img.sub_main_imagename imgname, 
+			  txt.sub_textlist_title title, txt.sub_textlist_place place
+		      from y_sub_main_imagelist img
+			  inner join y_sub_textlist txt
+			  on img.sub_main_id=txt.sub_textlist_id and img.sub_main_genre=txt.sub_textlist_genre
+			  where txt.sub_textlist_genre=#{genre} and img.sub_main_subject='sub' and img.sub_main_sector='detail'
+			  order by txt.sub_textlist_id ]]>
+</select>
+
+<select id="selectWeeklyImage" resultType="subImage" parameterType="String">
+	<![CDATA[ select img.sub_main_genre genre, img.sub_main_sector sector, img.sub_main_imageName imgname,
+			  txt.sub_textlist_title title, txt.sub_textlist_date t_date, txt.sub_textlist_place place, 
+			  txt.sub_textlist_content content from y_sub_main_imagelist img inner join y_sub_textList txt
+			  on txt.sub_textlist_id=img.sub_main_id and img.sub_main_genre=txt.sub_textlist_genre
+			  where img.sub_main_subject='sub' and txt.sub_textlist_genre=#{genre} and img.sub_main_sector='weekly'
+			  order by img.sub_main_imageName ]]>
+</select>
+
+<select id="selectLocalImage" resultType="subImage" parameterType="String">
+	<![CDATA[ select img.sub_main_genre genre, img.sub_main_sector sector, img.sub_main_imageName imgname,
+			  txt.sub_textlist_title title, txt.sub_textlist_date t_date, txt.sub_textlist_place place, 
+			  txt.sub_textlist_content content from y_sub_main_imagelist img inner join y_sub_textList txt
+			  on txt.sub_textlist_id=img.sub_main_id and img.sub_main_genre=txt.sub_textlist_genre
+			  where img.sub_main_subject='sub' and txt.sub_textlist_genre=#{genre} and img.sub_main_sector='local'
+			  order by img.sub_main_imageName ]]>		  
+</select>
+
+<select id="selectPickImage" resultType="subImage" parameterType="String">
+	<![CDATA[ select img.sub_main_genre genre, img.sub_main_sector sector, img.sub_main_imageName imgname,
+			  txt.sub_textlist_title title, txt.sub_textlist_date t_date, txt.sub_textlist_place place, 
+			  txt.sub_textlist_content content from y_sub_main_imagelist img inner join y_sub_textList txt
+			  on txt.sub_textlist_id=img.sub_main_id and img.sub_main_genre=txt.sub_textlist_genre
+			  where img.sub_main_subject='sub' and txt.sub_textlist_genre=#{genre} and img.sub_main_sector='pick'
+			  order by img.sub_main_imageName ]]>
+</select>
+
+<select id="selectBannerImage" resultType="subImage" parameterType="String">
+	<![CDATA[ select img.sub_main_genre genre, img.sub_main_sector sector, img.sub_main_imageName imgname
+			  from y_sub_main_imagelist img
+			  where img.sub_main_subject='sub' and img.sub_main_genre=#{genre} and img.sub_main_sector='banner'
+			  order by img.sub_main_imageName
+	]]>
+</select>
+
+</mapper>

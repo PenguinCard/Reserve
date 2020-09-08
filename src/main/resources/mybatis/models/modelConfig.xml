@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration SYSTEM "http://mybatis.org/dtd/mybatis-3-config.dtd"> 
+<configuration>
+ <typeAliases>
+  <typeAlias type="com.shop.yes24.concert.DTO.ConcertDetailDTO" alias="ConcertDetailDTO"/>
+  <typeAlias type="com.shop.yes24.musical.DTO.MusicalDetailDTO" alias="MusicalDetailDTO"/>
+  <typeAlias type="com.shop.yes24.member.DTO.LoginDTO" alias="LoginDTO"/>
+  <typeAlias type="com.shop.yes24.main.DTO.MainImageDTO" alias="mainImage"/>
+  <typeAlias type="com.shop.yes24.member.DTO.MemberDTO" alias="memberDTO"/>
+  <typeAlias type="com.shop.yes24.sub.DTO.SubImageDTO" alias="subImage"/>
+  <typeAlias type="com.shop.yes24.sub.DTO.SubSlideImageDTO" alias="subSlideImage"/>
+  <typeAlias type="com.shop.yes24.qna.DTO.QnaDTO" alias="QnaDTO"/>
+  <typeAlias type="com.shop.yes24.reservation.DTO.ReservationDTO" alias="ReservationDTO"/>
+  <typeAlias type="com.shop.yes24.member.DTO.MemberDTO" alias="mypageDTO"/>
+   <typeAlias type="com.shop.yes24.myticket.DTO.MyticketDTO" alias="myticketDTO"/>
+ </typeAliases>
+</configuration>
+ 

@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.seatwrap{
+    width: 960px;
+    height: 600px;
+}
+
+.seatmain{
+    width: 720px;
+    height: 100%;
+    float: left;
+}
+
+.seatnav{
+    width: 100%;
+    height: 30px;
+    background-image: url('../img/reserved/bg_seat.gif');
+}
+
+.seatnav > form{
+    width: 100%;
+    height: 100%;
+}
+
+.navleft{
+    float: left;
+    margin-left: 30px;
+}
+
+.watChange{
+    width: 70px;
+    height: 30px;
+    background-image: url('../img/reserved/h3_tit_seat01.gif');
+    background-repeat: no-repeat;
+    float: left;
+    margin-top: 8px;
+}
+
+.navright{
+    float: left;
+    margin-left: 30px;
+}
+
+.timeChange{
+    width: 70px;
+    height: 30px;
+    background-image: url('../img/reserved/h3_tit_seat02.gif');
+    background-repeat: no-repeat;
+    float: left;
+    margin-top: 8px;
+}
+
+form > div > select{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+#seeday{
+    width: 200px;
+    color: #888;
+}
+
+
+#seltimes{
+    width: 200px;
+    color: #888;
+}
+
+/* 醫뚯꽍�몴 */
+
+#seattable{
+    width: 600px;
+    height: 500px;
+    margin: 20px auto;
+}
+table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+td{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#screen{
+    width: 500px;
+    height: 30px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    color: #888;
+}
+
+
+.SClass{
+    background-color: #ffe23f;
+}
+
+.VIPClass{
+    background-color: #4ac450;
+}
+
+.RClass{
+    background-color: #7e7eff;
+}
+
+
+.seatNum{
+    cursor: default;
+}
+
+.seatinfo{
+    width: 220px;
+    height: 100%;
+    border-left: 1px solid #ccc;
+    float: left;
+    padding: 5px;
+}
+#minimap{
+    width: 100%;
+    height: 150px;
+    margin-top: 15px;
+}
+
+#minimap > li{
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    background-repeat: no-repeat;
+}
+
+#minimap > li:first-child{
+    height: 15px;
+    background-image: url('../img/reserved/tit2_minimap1.gif');
+}
+
+#minimap > li:last-child{
+    background-image: url('../img/reserved/tit2_minimap1_1.gif');
+}
+
+.seatClasP{
+    width: 100%;
+    height: 170px;
+}
+
+.seatClastit{
+    width: 100%;
+    height: 15px;
+    background-image: url('../img/reserved/tit2_minimap2.gif');
+    background-repeat: no-repeat;
+}
+
+.seatClasbox{
+    width: 100%;
+    height: 250px;
+}
+
+.seatClasbox > ul{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+.seatClasbox > ul > li{
+    width: 200px;
+    height: 12px;
+    background-image: url('../img/reserved/bx3_minimap2.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-left: 5px;
+}
+.seatClasbox > ul > li:first-child{
+    background-image: url('../img/reserved/bx3_minimap1.gif');
+    background-repeat: no-repeat;
+}
+.seatClasbox > ul > li:last-child{
+    background-image: url('../img/reserved/bx3_minimap3.gif');
+}
+
+.seatClasbox > ul > li:nth-child(2){
+    height: 100px;
+}
+
+.seatClasbox > ul > li > div{
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+.coloraddClass{
+    background-color: #eb2929;
+}
+
+
+.notsel{
+    background-color: #888;
+    cursor: default;
+}
+
+.seatClasbox > ul > li > p{
+    width: 180px;
+    float: left;
+    font-size: 12px;
+    line-height: 10px;
+    margin-top: 10px;
+}
+
+.blue{
+    color: #6699cc;
+}
+
+
+.showSeatNum{
+    width: 100%;
+    height: 300px;
+}
+
+.showSeattit{
+    width: 100%;
+    height: 15px;
+    background-image: url('../img/reserved/tit2_minimap4.gif');
+    background-repeat: no-repeat;
+}
+
+.showSeatbox{
+    width: 100%;
+    height: 150px;
+}
+
+.showSeatbox > ul{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.showSeatbox > ul > li{
+    width: 200px;
+    height: 12px;
+    background-image: url('../img/reserved/bx3_minimap2.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-left: 5px;
+    overflow: hidden;
+    overflow-y: none;
+}
+
+.showSeatbox > ul > li:first-child{
+    background-image: url('../img/reserved/bx3_minimap1.gif');
+}
+
+.showSeatbox > ul > li:last-child{
+    background-image: url('../img/reserved/bx3_minimap3.gif');
+}
+
+.showSeatbox > ul > li:nth-child(2){
+    height: 100px;
+}
+
+.showSeatdata{
+    width: 100%;
+    height: 100%;
+}
+
+.scroll{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.showSeatdata > li{
+    height: 20px;
+    display: block;
+    
+}
+
+.showSeatdata > li > p{
+    width: 50px;
+    float: left;
+    margin-left: 10px;
+}
+
+
+.clearbtn{
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#prevPage{
+    width: 80px;
+    height: 30px;
+    display: block;
+    background-image: url('../img/reserved/btn_prev2.gif');
+    background-repeat: no-repeat;
+    float: left;
+}
+
+#seatclear{
+    width: 115px;
+    height: 30px;
+    display: block;
+    float: left;
+    margin-left: 5px;
+    background-image: url('../img/reserved/btn_refresh.gif');
+    background-repeat: no-repeat;
+}
+
+#clearnextbtn{
+    width: 200px;
+    height: 50px;
+    display: block;
+    background-image: url('../img/reserved/btn_booking.gif');
+    background-repeat: no-repeat;
+    float: left;
+
+}

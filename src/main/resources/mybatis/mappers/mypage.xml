@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.mappers.mypage">
+	<update id="updateMyInfo" parameterType="mypageDTO">
+	update y_members
+		<set>
+		<if test="mem_phone1!='' and mem_phone1!=null">
+		mem_phone1=#{mem_phone1}, 
+		</if>
+		<if test="mem_phone2!='' and mem_phone2!=null">
+		mem_phone2=#{mem_phone2}, 
+		</if>
+		<if test="mem_phone3!='' and mem_phone3!=null">
+		mem_phone3=#{mem_phone3}, 
+		</if>
+		<if test="mem_email1!='' and mem_email1!=null">
+		mem_email1=#{mem_email1}, 
+		</if>
+		<if test="mem_email2!='' and mem_email2!=null">
+		mem_email2=#{mem_email2}, 
+		</if>
+		<if test="mem_name!='' and mem_name!=null">
+		mem_name=#{mem_name}
+		</if>
+		</set>
+		where
+		member_id=#{member_id}
+	</update>
+</mapper>
